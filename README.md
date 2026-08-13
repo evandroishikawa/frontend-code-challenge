@@ -76,20 +76,30 @@ Nesta seção você encontra os recursos visuais recomendados para o desafio. Si
 
 ## 🔗 API Fake
 
-Utilize o endpoint abaixo para obter os dados do evento:
+Os dados do evento são servidos localmente com o [`json-server`](https://github.com/typicode/json-server), a partir do arquivo [db.json](db.json).
 
-📡 [`https://run.mocky.io/v3/6a673775-d91a-4805-b4a0-ac23bf76aecd`](https://run.mocky.io/v3/6a673775-d91a-4805-b4a0-ac23bf76aecd)
+Para subir a API fake, rode:
+
+```bash
+pnpm server
+```
+
+Isso inicia o `json-server` em `http://localhost:3001`, expondo o endpoint:
+
+📡 `http://localhost:3001/events`
 
 ### Exemplo da resposta
 
 ```json
-{
-  "title": "Festival de Música Independente",
-  "description": "Um festival com as melhores bandas do cenário alternativo.",
-  "image": "https://images.unsplash.com/photo-1518972559570-9c7e1f0b1a43",
-  "price": 50,
-  "available": true
-}
+[
+  {
+    "title": "Festival de Música Independente",
+    "description": "Um festival com as melhores bandas do cenário alternativo.",
+    "image": "https://images.unsplash.com/photo-1518972559570-9c7e1f0b1a43",
+    "price": 50,
+    "available": true
+  }
+]
 ```
 
 ## 💬 E depois?

@@ -1,0 +1,11 @@
+{
+  "events": [
+    {
+      "title": "Festival de Música Independente",
+      "description": "Um festival com as melhores bandas do cenário alternativo.",
+      "image": "https://images.unsplash.com/photo-1518972559570-9c7e1f0b1a43",
+      "price": 50,
+      "available": true
+    }
+  ]
+}
